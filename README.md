@@ -11,4 +11,4 @@ blabla
 
 <b align="center">About</b>
 
-        apis not reeay
+        apis not ready
