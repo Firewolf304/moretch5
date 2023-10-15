@@ -73,11 +73,11 @@ class alogs:
         tempList = []
         edges = self.graph.edges
         for eachEdge in range(len(edges)):
-            if (edges[eachEdge]["@source"] == str(OSMId)):
+            if (str(edges[eachEdge][0]) == str(OSMId)):
                 temp_nbr = {}
 
                 neighbourCost = 0
-                neighbourId = edges[eachEdge]["@target"]
+                neighbourId = edges[eachEdge][1]
                 neighbourLatLon = self.getLatLon(neighbourId)
 
                 dataPoints = edges[eachEdge]["data"]
