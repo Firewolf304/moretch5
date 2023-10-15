@@ -3,7 +3,6 @@ import heapq as heap
 import time
 from haversine import haversine
 
-import ways
 
 class alogs:
     def __init__(self, graph):

@@ -5,10 +5,10 @@ osmnx.config(use_cache=True, log_console=True)
 
 start = 55.0600604, 82.9071446
 end = 55.2600604, 82.9871446
-#path = astar.aStar(start, end)
-
 #point = geo.Point(start)
 getgraph = osmnx.graph_from_point(start, dist=1000, network_type='all')
+path = astar.alogs(graph=getgraph)
+path.aStar(start, end)
 #global getgraph
 #print(path)
 #mass = list( getgraph.edges )
