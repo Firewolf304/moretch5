@@ -45,7 +45,7 @@ class alogs:
                 print("We have reached to the goal")
                 break
 
-            nbrs = cj.getNeighbours(curr_state, destination)
+            nbrs = self.getNeighbours(curr_state, destination)
             values = nbrs[curr_state]
             for eachNeighbour in values:
                 neighbourId, neighbourHeuristic, neighbourCost, neighbourLatLon = cj.getNeighbourInfo(eachNeighbour)
